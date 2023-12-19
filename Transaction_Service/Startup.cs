@@ -42,7 +42,7 @@ namespace Transaction_Service
             
             services.AddSafqaPostgres(Configuration);
             services.AddRepository();
-            
+            services.AddControllers();
             services.AddSwaggerGen();
 
         }

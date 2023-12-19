@@ -40,7 +40,9 @@ namespace SMS_Service
                 configurator.UsingRabbitMq((ctx,cfg)=>{
                     cfg.ConfigureEndpoints(ctx);
                 });
-            });
+            });            
+            
+            services.AddControllers();
             services.AddSwaggerGen();
         }
 
