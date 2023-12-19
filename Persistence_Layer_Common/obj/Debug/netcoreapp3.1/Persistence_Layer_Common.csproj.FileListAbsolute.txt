@@ -1,0 +1,13 @@
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/bin/Debug/netcoreapp3.1/Persistence_Layer_Common.deps.json
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/bin/Debug/netcoreapp3.1/Persistence_Layer_Common.dll
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/bin/Debug/netcoreapp3.1/Persistence_Layer_Common.pdb
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.csproj.AssemblyReference.cache
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.AssemblyInfoInputs.cache
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.AssemblyInfo.cs
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.csproj.CoreCompileInputs.cache
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.dll
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.pdb
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/bin/Debug/netcoreapp3.1/Persistence_Layer_Common.runtimeconfig.json
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/bin/Debug/netcoreapp3.1/Persistence_Layer_Common.runtimeconfig.dev.json
+/Users/cooper/Desktop/SAFQA v2.0/Persistence_Layer_Common/obj/Debug/netcoreapp3.1/Persistence_Layer_Common.genruntimeconfig.cache

@@ -1,0 +1,145 @@
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Investor_Service.deps.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Investor_Service.runtimeconfig.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Investor_Service.runtimeconfig.dev.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Investor_Service
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.deps.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.runtimeconfig.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.runtimeconfig.dev.json
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.pdb
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/EntityFramework.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Npgsql.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.CodeDom.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Investor_Service.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Investor_Service.pdb
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.csproj.AssemblyReference.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.AssemblyInfoInputs.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.AssemblyInfo.cs
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.csproj.CoreCompileInputs.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.MvcApplicationPartsAssemblyInfo.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/Wallet_Service.StaticWebAssets.Manifest.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/Wallet_Service.StaticWebAssets.Pack.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.Wallet_Service.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.build.Wallet_Service.props
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildMultiTargeting.Wallet_Service.props
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildTransitive.Wallet_Service.props
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.RazorTargetAssemblyInfo.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.csproj.CopyComplete
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.pdb
+/Users/cooper/Desktop/SAFQA/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.genruntimeconfig.cache
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/MassTransit.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/MassTransit.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/MassTransit.RabbitMqTransport.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/RabbitMQ.Client.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Threading.Channels.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/cooper/Desktop/SAFQA/Wallet_Service/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.deps.json
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.runtimeconfig.json
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.runtimeconfig.dev.json
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Wallet_Service.pdb
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/EntityFramework.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/MassTransit.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/MassTransit.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/MassTransit.RabbitMqTransport.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Hosting.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Npgsql.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/RabbitMQ.Client.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.CodeDom.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Text.Encodings.Web.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/System.Threading.Channels.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.csproj.AssemblyReference.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.AssemblyInfoInputs.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.AssemblyInfo.cs
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.csproj.CoreCompileInputs.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.MvcApplicationPartsAssemblyInfo.cs
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.MvcApplicationPartsAssemblyInfo.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/Wallet_Service.StaticWebAssets.Manifest.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/Wallet_Service.StaticWebAssets.Pack.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.Wallet_Service.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.build.Wallet_Service.props
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildMultiTargeting.Wallet_Service.props
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/staticwebassets/msbuild.buildTransitive.Wallet_Service.props
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.RazorTargetAssemblyInfo.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.csproj.CopyComplete
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.pdb
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/obj/Debug/netcoreapp3.1/Wallet_Service.genruntimeconfig.cache
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Persistence_Layer_Common.dll
+/Users/cooper/Desktop/SAFQA v2.0/Wallet_Service/bin/Debug/netcoreapp3.1/Persistence_Layer_Common.pdb

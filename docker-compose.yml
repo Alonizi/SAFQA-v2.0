@@ -1,0 +1,84 @@
+
+version: "3"
+services:
+  
+  user_service:
+    build:
+      dockerfile: dockerfile.userservice
+      context: .
+    ports:
+      - "8080:5000"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=postgres_db;Port=5432;Database=SafqaDb;Username=cooper;Password=9111
+      - ASPNETCORE_URLS=http://+:5000
+    depends_on:
+      - postgres_db
+      - rabbitmq
+  
+  wallet_service:
+    build:
+      dockerfile: dockerfile.walletservice
+      context: .
+    ports:
+      - "8081:5001"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=postgres_db;Port=5432;Database=SafqaDb;Username=cooper;Password=9111
+      - ASPNETCORE_URLS=http://+:5001
+    depends_on:
+      - postgres_db
+      - rabbitmq
+
+  opportunity_service:
+    build:
+      dockerfile: dockerfile.opportunityservice
+      context: .
+    ports:
+      - "8082:5002"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=postgres_db;Port=5432;Database=SafqaDb;Username=cooper;Password=9111
+      - ASPNETCORE_URLS=http://+:5002
+    depends_on:
+      - postgres_db
+      - rabbitmq
+      - wallet_service
+
+  sms_service:
+    build:
+      dockerfile: dockerfile.smsservice
+      context: .
+    ports:
+      - "8083:5003"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=postgres_db;Port=5432;Database=SafqaDb;Username=cooper;Password=9111
+      - ASPNETCORE_URLS=http://+:5003
+    depends_on:
+      - postgres_db
+      - rabbitmq
+
+  transaction_service:
+    build:
+      dockerfile: dockerfile.transactionservice
+      context: .
+    ports:
+      - "8084:5004"
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=postgres_db;Port=5432;Database=SafqaDb;Username=cooper;Password=9111
+      - ASPNETCORE_URLS=http://+:5004
+    depends_on:
+      - postgres_db
+      - rabbitmq
+
+  postgres_db:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: 9111
+      POSTGRES_USER: cooper
+      POSTGRES_DB: SafqaDb
+    ports:
+      - "5433:5432"
+
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - 15672:15672
+    hostname: rabbitmq

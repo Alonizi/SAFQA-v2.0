@@ -1,0 +1,977 @@
+2023-12-14 15:24:42.903 +03 [2653] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2023-12-14 15:24:42.906 +03 [2653] LOG:  listening on IPv6 address "::1", port 5432
+2023-12-14 15:24:42.906 +03 [2653] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-12-14 15:24:42.906 +03 [2653] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-12-14 15:24:42.910 +03 [2656] LOG:  database system was shut down at 2023-12-14 15:24:42 +03
+2023-12-14 15:24:42.914 +03 [2653] LOG:  database system is ready to accept connections
+2023-12-14 15:29:42.914 +03 [2654] LOG:  checkpoint starting: time
+2023-12-14 15:31:21.340 +03 [2654] LOG:  checkpoint complete: wrote 983 buffers (6.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=98.407 s, sync=0.012 s, total=98.426 s; sync files=317, longest=0.001 s, average=0.001 s; distance=4634 kB, estimate=4634 kB; lsn=0/1BD0510, redo lsn=0/1BD04D8
+2023-12-14 15:35:46.960 +03 [3407] FATAL:  role "root" does not exist
+2023-12-14 15:35:50.459 +03 [3408] FATAL:  role "root" does not exist
+2023-12-14 16:46:19.438 +03 [2653] LOG:  received fast shutdown request
+2023-12-14 16:46:19.438 +03 [2653] LOG:  aborting any active transactions
+2023-12-14 16:46:19.440 +03 [2653] LOG:  background worker "logical replication launcher" (PID 2659) exited with exit code 1
+2023-12-14 16:46:19.440 +03 [2654] LOG:  shutting down
+2023-12-14 16:46:19.441 +03 [2654] LOG:  checkpoint starting: shutdown immediate
+2023-12-14 16:46:19.446 +03 [2654] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.006 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4171 kB; lsn=0/1BD05C0, redo lsn=0/1BD05C0
+2023-12-14 16:46:19.454 +03 [2653] LOG:  database system is shut down
+2023-12-14 16:47:44.058 +03 [4619] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2023-12-14 16:47:44.062 +03 [4619] LOG:  listening on IPv6 address "::1", port 5432
+2023-12-14 16:47:44.062 +03 [4619] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-12-14 16:47:44.063 +03 [4619] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-12-14 16:47:44.072 +03 [4623] LOG:  database system was shut down at 2023-12-14 16:46:19 +03
+2023-12-14 16:47:44.082 +03 [4619] LOG:  database system is ready to accept connections
+2023-12-14 16:52:44.075 +03 [4621] LOG:  checkpoint starting: time
+2023-12-14 16:52:44.079 +03 [4621] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.005 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1BD06A8, redo lsn=0/1BD0670
+2023-12-14 18:12:44.384 +03 [4621] LOG:  checkpoint starting: time
+2023-12-14 18:12:44.498 +03 [4621] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.002 s, total=0.114 s; sync files=1, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/1BD08F8, redo lsn=0/1BD08C0
+2023-12-14 18:12:54.898 +03 [5453] ERROR:  new locale provider (libc) does not match locale provider of the template database (icu)
+2023-12-14 18:12:54.898 +03 [5453] HINT:  Use the same locale provider as in the template database, or use template0 as template.
+2023-12-14 18:12:54.898 +03 [5453] STATEMENT:  CREATE DATABASE "SafqaDb"
+	    WITH
+	    OWNER = cooper
+	    ENCODING = 'UTF8'
+	    LOCALE_PROVIDER = 'libc'
+	    CONNECTION LIMIT = -1
+	    IS_TEMPLATE = False;
+	
+2023-12-14 18:14:00.404 +03 [5480] FATAL:  database "SafqaDB" does not exist
+2023-12-14 18:14:42.238 +03 [5493] ERROR:  database ""SafqaDb"" does not exist
+2023-12-14 18:14:42.238 +03 [5493] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-14 18:17:44.505 +03 [4621] LOG:  checkpoint starting: time
+2023-12-14 18:18:11.956 +03 [5529] ERROR:  database ""SafqaDb"" does not exist
+2023-12-14 18:18:11.956 +03 [5529] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-14 18:19:18.755 +03 [5558] ERROR:  database ""SafqaDb"" does not exist
+2023-12-14 18:19:18.755 +03 [5558] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-14 18:19:19.206 +03 [4621] LOG:  checkpoint complete: wrote 942 buffers (5.7%); 0 WAL file(s) added, 0 removed, 1 recycled; write=94.682 s, sync=0.014 s, total=94.701 s; sync files=303, longest=0.002 s, average=0.001 s; distance=4324 kB, estimate=4324 kB; lsn=0/2009BC0, redo lsn=0/2009B88
+2023-12-14 18:42:42.867 +03 [5989] ERROR:  database ""SafqaDb"" does not exist
+2023-12-14 18:42:42.867 +03 [5989] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-14 19:02:44.421 +03 [4621] LOG:  checkpoint starting: time
+2023-12-14 19:02:51.707 +03 [4621] LOG:  checkpoint complete: wrote 73 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.271 s, sync=0.010 s, total=7.287 s; sync files=58, longest=0.003 s, average=0.001 s; distance=299 kB, estimate=3922 kB; lsn=0/20548C8, redo lsn=0/2054890
+2023-12-15 10:30:01.926 +03 [14654] LOG:  invalid length of startup packet
+2023-12-15 10:30:01.932 +03 [14655] LOG:  invalid length of startup packet
+2023-12-15 10:30:02.080 +03 [14657] LOG:  invalid length of startup packet
+2023-12-15 10:30:02.081 +03 [14658] LOG:  invalid length of startup packet
+2023-12-15 10:30:02.092 +03 [14659] LOG:  invalid length of startup packet
+2023-12-15 10:30:02.095 +03 [14660] LOG:  invalid length of startup packet
+2023-12-15 10:30:03.093 +03 [14662] LOG:  invalid length of startup packet
+2023-12-15 10:30:03.097 +03 [14663] LOG:  invalid length of startup packet
+2023-12-15 10:30:03.111 +03 [14664] LOG:  invalid length of startup packet
+2023-12-15 10:30:03.112 +03 [14665] LOG:  invalid length of startup packet
+2023-12-15 10:30:03.116 +03 [14666] LOG:  invalid length of startup packet
+2023-12-15 10:30:03.116 +03 [14667] LOG:  invalid length of startup packet
+2023-12-15 10:30:08.125 +03 [14670] LOG:  invalid length of startup packet
+2023-12-15 10:30:08.130 +03 [14671] LOG:  invalid length of startup packet
+2023-12-15 10:30:08.139 +03 [14672] LOG:  invalid length of startup packet
+2023-12-15 10:30:08.140 +03 [14673] LOG:  invalid length of startup packet
+2023-12-15 10:30:08.143 +03 [14674] LOG:  invalid length of startup packet
+2023-12-15 10:30:08.143 +03 [14675] LOG:  invalid length of startup packet
+2023-12-15 11:52:37.823 +03 [16004] ERROR:  database ""SafqaDb"" does not exist
+2023-12-15 11:52:37.823 +03 [16004] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-15 11:53:34.891 +03 [4621] LOG:  checkpoint starting: time
+2023-12-15 11:53:35.715 +03 [4621] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.813 s, sync=0.004 s, total=0.826 s; sync files=5, longest=0.002 s, average=0.001 s; distance=27 kB, estimate=3532 kB; lsn=0/205B6B0, redo lsn=0/205B678
+2023-12-15 12:10:30.630 +03 [16421] ERROR:  database ""SafqaDb"" does not exist
+2023-12-15 12:10:30.630 +03 [16421] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-15 12:13:34.690 +03 [4621] LOG:  checkpoint starting: time
+2023-12-15 12:13:35.012 +03 [4621] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.007 s, total=0.323 s; sync files=4, longest=0.006 s, average=0.002 s; distance=0 kB, estimate=3179 kB; lsn=0/205B9F0, redo lsn=0/205B9B8
+2023-12-15 12:15:14.930 +03 [16515] ERROR:  database ""SafqaDb"" does not exist
+2023-12-15 12:15:14.930 +03 [16515] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-15 12:15:45.989 +03 [16515] ERROR:  syntax error at or near "d" at character 9
+2023-12-15 12:15:45.989 +03 [16515] STATEMENT:  EXPLAIN d
+	;
+2023-12-15 12:15:46.365 +03 [16515] ERROR:  syntax error at or near "de" at character 9
+2023-12-15 12:15:46.365 +03 [16515] STATEMENT:  EXPLAIN de
+	;
+2023-12-15 12:15:49.172 +03 [16515] ERROR:  syntax error at or near "D" at character 9
+2023-12-15 12:15:49.172 +03 [16515] STATEMENT:  EXPLAIN D
+	;
+2023-12-15 12:15:49.735 +03 [16515] ERROR:  syntax error at or near "Dee" at character 9
+2023-12-15 12:15:49.735 +03 [16515] STATEMENT:  EXPLAIN Dee
+	;
+2023-12-15 12:15:50.291 +03 [16515] ERROR:  syntax error at or near "De" at character 9
+2023-12-15 12:15:50.291 +03 [16515] STATEMENT:  EXPLAIN De
+	;
+2023-12-15 12:15:50.528 +03 [16515] ERROR:  syntax error at or near "Del" at character 9
+2023-12-15 12:15:50.528 +03 [16515] STATEMENT:  EXPLAIN Del
+	;
+2023-12-15 12:15:52.324 +03 [16515] ERROR:  syntax error at or near ";" at character 16
+2023-12-15 12:15:52.324 +03 [16515] STATEMENT:  EXPLAIN Delete
+	;
+2023-12-15 12:15:52.924 +03 [16515] ERROR:  syntax error at or near ";" at character 17
+2023-12-15 12:15:52.924 +03 [16515] STATEMENT:  EXPLAIN Delete 
+	;
+2023-12-15 12:15:55.912 +03 [16515] ERROR:  syntax error at or near "f" at character 16
+2023-12-15 12:15:55.912 +03 [16515] STATEMENT:  EXPLAIN Delete f
+	;
+2023-12-15 12:15:57.746 +03 [16515] ERROR:  syntax error at or near "fr" at character 16
+2023-12-15 12:15:57.746 +03 [16515] STATEMENT:  EXPLAIN Delete fr
+	;
+2023-12-15 12:15:59.069 +03 [16515] ERROR:  syntax error at or near "fro" at character 16
+2023-12-15 12:15:59.069 +03 [16515] STATEMENT:  EXPLAIN Delete fro
+	;
+2023-12-15 12:15:59.400 +03 [16515] ERROR:  syntax error at or near ";" at character 21
+2023-12-15 12:15:59.400 +03 [16515] STATEMENT:  EXPLAIN Delete from
+	;
+2023-12-15 12:15:59.806 +03 [16515] ERROR:  syntax error at or near ";" at character 22
+2023-12-15 12:15:59.806 +03 [16515] STATEMENT:  EXPLAIN Delete from 
+	;
+2023-12-15 12:16:02.939 +03 [16515] ERROR:  zero-length delimited identifier at or near """" at character 21
+2023-12-15 12:16:02.939 +03 [16515] STATEMENT:  EXPLAIN Delete from ""
+	;
+2023-12-15 12:16:04.303 +03 [16515] ERROR:  relation "us" does not exist at character 21
+2023-12-15 12:16:04.303 +03 [16515] STATEMENT:  EXPLAIN Delete from "us"
+	;
+2023-12-15 12:16:04.660 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:04.660 +03 [16515] STATEMENT:  EXPLAIN Delete from "user"
+	;
+2023-12-15 12:16:06.601 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:06.601 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" 
+	;
+2023-12-15 12:16:07.167 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:07.167 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" w
+	;
+2023-12-15 12:16:07.821 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:07.821 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" wh
+	;
+2023-12-15 12:16:12.051 +03 [16515] ERROR:  syntax error at or near ";" at character 34
+2023-12-15 12:16:12.051 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE
+	;
+2023-12-15 12:16:12.874 +03 [16515] ERROR:  syntax error at or near ";" at character 35
+2023-12-15 12:16:12.874 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE 
+	;
+2023-12-15 12:16:14.344 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:14.344 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE i
+	;
+2023-12-15 12:16:15.254 +03 [16515] ERROR:  syntax error at or near ";" at character 35
+2023-12-15 12:16:15.254 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE 
+	;
+2023-12-15 12:16:18.839 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:18.839 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE id
+	;
+2023-12-15 12:16:19.575 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:19.575 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE Id
+	;
+2023-12-15 12:16:20.094 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:20.094 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE Id 
+	;
+2023-12-15 12:16:20.717 +03 [16515] ERROR:  syntax error at or near ";" at character 39
+2023-12-15 12:16:20.717 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE Id =
+	;
+2023-12-15 12:16:21.357 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:16:21.357 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE Id =1
+	;
+2023-12-15 12:17:08.188 +03 [16515] ERROR:  unterminated quoted identifier at or near ""user WHERE Id =1
+	;" at character 21
+2023-12-15 12:17:08.188 +03 [16515] STATEMENT:  EXPLAIN Delete from "user WHERE Id =1
+	;
+2023-12-15 12:17:09.341 +03 [16515] ERROR:  syntax error at or near "user" at character 21
+2023-12-15 12:17:09.341 +03 [16515] STATEMENT:  EXPLAIN Delete from user WHERE Id =1
+	;
+2023-12-15 12:17:11.817 +03 [16515] ERROR:  unterminated quoted identifier at or near ""user WHERE Id =1
+	;" at character 21
+2023-12-15 12:17:11.817 +03 [16515] STATEMENT:  EXPLAIN Delete from "user WHERE Id =1
+	;
+2023-12-15 12:17:12.256 +03 [16515] ERROR:  relation "user" does not exist at character 21
+2023-12-15 12:17:12.256 +03 [16515] STATEMENT:  EXPLAIN Delete from "user" WHERE Id =1
+	;
+2023-12-15 12:18:34.010 +03 [4621] LOG:  checkpoint starting: time
+2023-12-15 12:18:34.324 +03 [4621] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.001 s, total=0.315 s; sync files=4, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=2861 kB; lsn=0/205BDA8, redo lsn=0/205BD70
+2023-12-15 12:18:49.474 +03 [16515] ERROR:  syntax error at or near "U" at character 9
+2023-12-15 12:18:49.474 +03 [16515] STATEMENT:  EXPLAIN U from "user" WHERE Id =1
+	;
+2023-12-15 12:18:50.163 +03 [16515] ERROR:  syntax error at or near "Upda" at character 9
+2023-12-15 12:18:50.163 +03 [16515] STATEMENT:  EXPLAIN Upda from "user" WHERE Id =1
+	;
+2023-12-15 12:18:50.643 +03 [16515] ERROR:  syntax error at or near "from" at character 16
+2023-12-15 12:18:50.643 +03 [16515] STATEMENT:  EXPLAIN Update from "user" WHERE Id =1
+	;
+2023-12-15 12:18:52.249 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 24
+2023-12-15 12:18:52.249 +03 [16515] STATEMENT:  EXPLAIN Update  "user" WHERE Id =1
+	;
+2023-12-15 12:18:53.124 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 23
+2023-12-15 12:18:53.124 +03 [16515] STATEMENT:  EXPLAIN Update "user" WHERE Id =1
+	;
+2023-12-15 12:18:54.653 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 24
+2023-12-15 12:18:54.653 +03 [16515] STATEMENT:  EXPLAIN Update "user"s WHERE Id =1
+	;
+2023-12-15 12:18:55.180 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 23
+2023-12-15 12:18:55.180 +03 [16515] STATEMENT:  EXPLAIN Update "user" WHERE Id =1
+	;
+2023-12-15 12:18:55.303 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 24
+2023-12-15 12:18:55.303 +03 [16515] STATEMENT:  EXPLAIN Update "user"s WHERE Id =1
+	;
+2023-12-15 12:18:55.694 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 23
+2023-12-15 12:18:55.694 +03 [16515] STATEMENT:  EXPLAIN Update "user" WHERE Id =1
+	;
+2023-12-15 12:18:55.793 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 24
+2023-12-15 12:18:55.793 +03 [16515] STATEMENT:  EXPLAIN Update "user"  WHERE Id =1
+	;
+2023-12-15 12:18:56.108 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 25
+2023-12-15 12:18:56.108 +03 [16515] STATEMENT:  EXPLAIN Update "user" s WHERE Id =1
+	;
+2023-12-15 12:18:56.508 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 27
+2023-12-15 12:18:56.508 +03 [16515] STATEMENT:  EXPLAIN Update "user" set WHERE Id =1
+	;
+2023-12-15 12:18:57.110 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 28
+2023-12-15 12:18:57.110 +03 [16515] STATEMENT:  EXPLAIN Update "user" set  WHERE Id =1
+	;
+2023-12-15 12:19:02.963 +03 [16515] ERROR:  zero-length delimited identifier at or near """" at character 27
+2023-12-15 12:19:02.963 +03 [16515] STATEMENT:  EXPLAIN Update "user" set ""
+	""WHERE Id =1
+	;
+2023-12-15 12:19:03.937 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 31
+2023-12-15 12:19:03.937 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "p" WHERE Id =1
+	;
+2023-12-15 12:19:04.707 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 35
+2023-12-15 12:19:04.707 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "phone" WHERE Id =1
+	;
+2023-12-15 12:19:05.863 +03 [16515] ERROR:  zero-length delimited identifier at or near """" at character 27
+2023-12-15 12:19:05.863 +03 [16515] STATEMENT:  EXPLAIN Update "user" set ""
+	""WHERE Id =1
+	;
+2023-12-15 12:19:06.649 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 31
+2023-12-15 12:19:06.649 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "E" WHERE Id =1
+	;
+2023-12-15 12:19:07.072 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 32
+2023-12-15 12:19:07.072 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Em" WHERE Id =1
+	;
+2023-12-15 12:19:07.717 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 35
+2023-12-15 12:19:07.717 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Emeil" WHERE Id =1
+	;
+2023-12-15 12:19:08.906 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 34
+2023-12-15 12:19:08.906 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Emai" WHERE Id =1
+	;
+2023-12-15 12:19:09.118 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 35
+2023-12-15 12:19:09.118 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" WHERE Id =1
+	;
+2023-12-15 12:19:12.248 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 36
+2023-12-15 12:19:12.248 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" =WHERE Id =1
+	;
+2023-12-15 12:19:12.524 +03 [16515] ERROR:  syntax error at or near "WHERE" at character 37
+2023-12-15 12:19:12.524 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = WHERE Id =1
+	;
+2023-12-15 12:19:13.040 +03 [16515] ERROR:  unterminated quoted identifier at or near ""WHERE Id =1
+	;" at character 37
+2023-12-15 12:19:13.040 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "WHERE Id =1
+	;
+2023-12-15 12:19:13.811 +03 [16515] ERROR:  zero-length delimited identifier at or near """" at character 37
+2023-12-15 12:19:13.811 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = ""
+	""HERE Id =1
+	;
+2023-12-15 12:19:14.962 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:14.962 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "s"WHERE Id =1
+	;
+2023-12-15 12:19:15.184 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:15.184 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sd"WHERE Id =1
+	;
+2023-12-15 12:19:15.689 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:15.689 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd"WHERE Id =1
+	;
+2023-12-15 12:19:15.996 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:15.996 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd@"WHERE Id =1
+	;
+2023-12-15 12:19:16.435 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:16.435 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd@h"WHERE Id =1
+	;
+2023-12-15 12:19:16.974 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:16.974 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd@hotmai"WHERE Id =1
+	;
+2023-12-15 12:19:17.157 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:17.157 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd@hotmail"WHERE Id =1
+	;
+2023-12-15 12:19:17.304 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:17.304 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd@hotmail."WHERE Id =1
+	;
+2023-12-15 12:19:17.388 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:17.388 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd@hotmail.c"WHERE Id =1
+	;
+2023-12-15 12:19:17.758 +03 [16515] ERROR:  relation "user" does not exist at character 16
+2023-12-15 12:19:17.758 +03 [16515] STATEMENT:  EXPLAIN Update "user" set "Email" = "sdasd@hotmail.com"WHERE Id =1
+	;
+2023-12-15 12:19:22.309 +03 [16515] ERROR:  column "id" does not exist at character 63
+2023-12-15 12:19:22.309 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:19:22.309 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com"WHERE Id =1
+	;
+2023-12-15 12:19:24.935 +03 [16515] ERROR:  column "id" does not exist at character 64
+2023-12-15 12:19:24.935 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:19:24.935 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:19:26.784 +03 [16515] ERROR:  column "i" does not exist at character 64
+2023-12-15 12:19:26.784 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com" WHERE i =1
+	;
+2023-12-15 12:19:27.691 +03 [16515] ERROR:  syntax error at or near "=" at character 65
+2023-12-15 12:19:27.691 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com" WHERE  =1
+	;
+2023-12-15 12:19:31.262 +03 [16515] ERROR:  column "o" does not exist at character 64
+2023-12-15 12:19:31.262 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com" WHERE O =1
+	;
+2023-12-15 12:19:31.917 +03 [16515] ERROR:  syntax error at or near "=" at character 65
+2023-12-15 12:19:31.917 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com" WHERE  =1
+	;
+2023-12-15 12:19:32.100 +03 [16515] ERROR:  column "i" does not exist at character 64
+2023-12-15 12:19:32.100 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com" WHERE I =1
+	;
+2023-12-15 12:19:32.949 +03 [16515] ERROR:  column "id" does not exist at character 64
+2023-12-15 12:19:32.949 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:19:32.949 +03 [16515] STATEMENT:  EXPLAIN Update "users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:29.999 +03 [16515] ERROR:  syntax error at or near "D" at character 9
+2023-12-15 12:21:29.999 +03 [16515] STATEMENT:  EXPLAIN D "users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:30.568 +03 [16515] ERROR:  syntax error at or near "Del" at character 9
+2023-12-15 12:21:30.568 +03 [16515] STATEMENT:  EXPLAIN Del "users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:30.898 +03 [16515] ERROR:  syntax error at or near "Delet" at character 9
+2023-12-15 12:21:30.898 +03 [16515] STATEMENT:  EXPLAIN Delet "users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:31.613 +03 [16515] ERROR:  syntax error at or near ""users"" at character 16
+2023-12-15 12:21:31.613 +03 [16515] STATEMENT:  EXPLAIN Delete "users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:33.492 +03 [16515] ERROR:  syntax error at or near "f" at character 16
+2023-12-15 12:21:33.492 +03 [16515] STATEMENT:  EXPLAIN Delete f"users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:33.981 +03 [16515] ERROR:  syntax error at or near "set" at character 28
+2023-12-15 12:21:33.981 +03 [16515] STATEMENT:  EXPLAIN Delete from"users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:34.041 +03 [16515] ERROR:  syntax error at or near "set" at character 29
+2023-12-15 12:21:34.041 +03 [16515] STATEMENT:  EXPLAIN Delete from "users" set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:38.497 +03 [16515] ERROR:  syntax error at or near "" = "" at character 38
+2023-12-15 12:21:38.497 +03 [16515] STATEMENT:  EXPLAIN Delete from "users set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:39.717 +03 [16515] ERROR:  syntax error at or near "set" at character 27
+2023-12-15 12:21:39.717 +03 [16515] STATEMENT:  EXPLAIN Delete from users set "Email" = "sdasd@hotmail.com" WHERE Id =1
+	;
+2023-12-15 12:21:42.171 +03 [16515] ERROR:  syntax error at or near "set" at character 27
+2023-12-15 12:21:42.171 +03 [16515] STATEMENT:  EXPLAIN Delete from users set "Email" = "sdasd@hotmail.com WHERE Id =1
+	;
+2023-12-15 12:21:44.754 +03 [16515] ERROR:  syntax error at or near "set" at character 27
+2023-12-15 12:21:44.754 +03 [16515] STATEMENT:  EXPLAIN Delete from users set "E WHERE Id =1
+	;
+2023-12-15 12:21:45.258 +03 [16515] ERROR:  syntax error at or near "set" at character 27
+2023-12-15 12:21:45.258 +03 [16515] STATEMENT:  EXPLAIN Delete from users set WHERE Id =1
+	;
+2023-12-15 12:21:45.949 +03 [16515] ERROR:  column "id" does not exist at character 34
+2023-12-15 12:21:45.949 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:21:45.949 +03 [16515] STATEMENT:  EXPLAIN Delete from users  WHERE Id =1
+	;
+2023-12-15 12:21:46.160 +03 [16515] ERROR:  column "id" does not exist at character 33
+2023-12-15 12:21:46.160 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:21:46.160 +03 [16515] STATEMENT:  EXPLAIN Delete from users WHERE Id =1
+	;
+2023-12-15 12:21:50.414 +03 [16515] ERROR:  column "id" does not exist at character 33
+2023-12-15 12:21:50.414 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:21:50.414 +03 [16515] STATEMENT:  EXPLAIN Delete from users WHERE Id =3
+	;
+2023-12-15 12:21:54.412 +03 [16515] ERROR:  column "id" does not exist at character 33
+2023-12-15 12:21:54.412 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:21:54.412 +03 [16515] STATEMENT:  EXPLAIN Delete from users WHERE Id =3
+	;
+2023-12-15 12:21:58.121 +03 [16660] ERROR:  column "id" does not exist at character 62
+2023-12-15 12:21:58.121 +03 [16660] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:21:58.121 +03 [16660] STATEMENT:  -- SELECT * FROM "users" LIMIT 10;
+	
+	
+	Delete from users WHERE Id =3
+2023-12-15 12:22:05.362 +03 [16515] ERROR:  column "id" does not exist at character 35
+2023-12-15 12:22:05.362 +03 [16515] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:22:05.362 +03 [16515] STATEMENT:  EXPLAIN Delete from "users" WHERE Id =3
+	;
+2023-12-15 12:22:26.719 +03 [16686] ERROR:  database ""SafqaDb"" does not exist
+2023-12-15 12:22:26.719 +03 [16686] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-15 12:25:41.212 +03 [16759] ERROR:  column "id" does not exist at character 33
+2023-12-15 12:25:41.212 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:25:41.212 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE Id =3;
+2023-12-15 12:25:50.776 +03 [16759] ERROR:  column users.id does not exist at character 33
+2023-12-15 12:25:50.776 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:25:50.776 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE users.Id =3;
+2023-12-15 12:26:17.491 +03 [16759] ERROR:  column users.id does not exist at character 33
+2023-12-15 12:26:17.491 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:26:17.491 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE users.Id =3;
+2023-12-15 12:26:19.067 +03 [16759] ERROR:  column users.id does not exist at character 33
+2023-12-15 12:26:19.067 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:26:19.067 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE users.Id =3;
+2023-12-15 12:26:30.552 +03 [16759] ERROR:  column users.id does not exist at character 33
+2023-12-15 12:26:30.552 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:26:30.552 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE public.users.Id =3;
+2023-12-15 12:26:50.932 +03 [16759] ERROR:  column users.id does not exist at character 33
+2023-12-15 12:26:50.932 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:26:50.932 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE users.id =3;
+2023-12-15 12:26:56.193 +03 [16759] ERROR:  column users.id does not exist at character 33
+2023-12-15 12:26:56.193 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:26:56.193 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE users.id =3;
+2023-12-15 12:27:05.530 +03 [16759] ERROR:  column users.id does not exist at character 33
+2023-12-15 12:27:05.530 +03 [16759] HINT:  Perhaps you meant to reference the column "users.Id".
+2023-12-15 12:27:05.530 +03 [16759] STATEMENT:  DELETE FROM public.users
+		WHERE users.Id =3;
+2023-12-15 12:28:34.318 +03 [4621] LOG:  checkpoint starting: time
+2023-12-15 12:28:34.438 +03 [4621] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.007 s, total=0.120 s; sync files=2, longest=0.007 s, average=0.004 s; distance=0 kB, estimate=2575 kB; lsn=0/205C0A8, redo lsn=0/205C070
+2023-12-15 12:43:34.550 +03 [4621] LOG:  checkpoint starting: time
+2023-12-15 12:43:34.663 +03 [4621] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.002 s, total=0.113 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=2318 kB; lsn=0/205C468, redo lsn=0/205C430
+2023-12-16 09:25:52.300 +03 [4621] LOG:  checkpoint starting: time
+2023-12-16 09:25:52.420 +03 [4621] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.105 s, sync=0.003 s, total=0.121 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=2086 kB; lsn=0/205C810, redo lsn=0/205C7D8
+2023-12-16 11:19:24.854 +03 [28464] ERROR:  database ""SafqaDb"" does not exist
+2023-12-16 11:19:24.854 +03 [28464] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-16 11:21:57.773 +03 [4621] LOG:  checkpoint starting: time
+2023-12-16 11:21:57.886 +03 [4621] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.003 s, total=0.114 s; sync files=2, longest=0.002 s, average=0.002 s; distance=1 kB, estimate=1877 kB; lsn=0/205CC18, redo lsn=0/205CBE0
+2023-12-16 22:44:17.078 +03 [4621] LOG:  checkpoint starting: time
+2023-12-16 22:44:17.251 +03 [4621] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.154 s, sync=0.001 s, total=0.175 s; sync files=1, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=1690 kB; lsn=0/205D008, redo lsn=0/205CFD0
+2023-12-17 08:11:47.698 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 08:11:51.428 +03 [4621] LOG:  checkpoint complete: wrote 37 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.701 s, sync=0.005 s, total=3.734 s; sync files=31, longest=0.001 s, average=0.001 s; distance=158 kB, estimate=1537 kB; lsn=0/2084B38, redo lsn=0/2084B00
+2023-12-17 08:16:47.414 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 08:16:48.469 +03 [4621] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.030 s, sync=0.012 s, total=1.056 s; sync files=7, longest=0.006 s, average=0.002 s; distance=45 kB, estimate=1387 kB; lsn=0/2090058, redo lsn=0/2090020
+2023-12-17 08:21:47.534 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 08:21:50.393 +03 [4621] LOG:  checkpoint complete: wrote 29 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.832 s, sync=0.015 s, total=2.859 s; sync files=27, longest=0.006 s, average=0.001 s; distance=106 kB, estimate=1259 kB; lsn=0/20AABA8, redo lsn=0/20AAB70
+2023-12-17 08:26:47.389 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 08:26:50.618 +03 [4621] LOG:  checkpoint complete: wrote 32 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.175 s, sync=0.039 s, total=3.229 s; sync files=29, longest=0.028 s, average=0.002 s; distance=126 kB, estimate=1146 kB; lsn=0/20CA400, redo lsn=0/20CA3C8
+2023-12-17 08:31:47.610 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 08:31:48.665 +03 [4621] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.032 s, sync=0.015 s, total=1.056 s; sync files=9, longest=0.009 s, average=0.002 s; distance=46 kB, estimate=1036 kB; lsn=0/20D5CF8, redo lsn=0/20D5CC0
+2023-12-17 08:36:47.659 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 08:36:50.826 +03 [4621] LOG:  checkpoint complete: wrote 32 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.155 s, sync=0.007 s, total=3.167 s; sync files=29, longest=0.003 s, average=0.001 s; distance=130 kB, estimate=945 kB; lsn=0/20F65D0, redo lsn=0/20F6598
+2023-12-17 08:41:47.818 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 08:41:48.137 +03 [4621] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.003 s, total=0.319 s; sync files=4, longest=0.002 s, average=0.001 s; distance=3 kB, estimate=851 kB; lsn=0/20F7410, redo lsn=0/20F73D8
+2023-12-17 09:31:47.180 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 09:31:50.827 +03 [4621] LOG:  checkpoint complete: wrote 37 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.633 s, sync=0.011 s, total=3.647 s; sync files=33, longest=0.006 s, average=0.001 s; distance=145 kB, estimate=780 kB; lsn=0/211B8A0, redo lsn=0/211B868
+2023-12-17 09:36:47.769 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 09:36:48.690 +03 [4621] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.908 s, sync=0.009 s, total=0.921 s; sync files=7, longest=0.006 s, average=0.002 s; distance=51 kB, estimate=707 kB; lsn=0/2128820, redo lsn=0/21287E8
+2023-12-17 10:21:47.658 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 10:21:48.197 +03 [4621] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.515 s, sync=0.006 s, total=0.539 s; sync files=5, longest=0.006 s, average=0.002 s; distance=8 kB, estimate=638 kB; lsn=0/212AA68, redo lsn=0/212AA30
+2023-12-17 10:25:58.730 +03 [48315] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 10:25:58.730 +03 [48315] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 10:26:47.190 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 10:26:47.303 +03 [4621] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.003 s, total=0.113 s; sync files=1, longest=0.003 s, average=0.003 s; distance=5 kB, estimate=574 kB; lsn=0/212C0F0, redo lsn=0/212C0B8
+2023-12-17 10:27:27.419 +03 [48332] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 10:27:27.419 +03 [48332] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 10:31:47.297 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 10:31:48.339 +03 [4621] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.029 s, sync=0.003 s, total=1.043 s; sync files=8, longest=0.002 s, average=0.001 s; distance=1 kB, estimate=517 kB; lsn=0/212C870, redo lsn=0/212C838
+2023-12-17 17:00:04.894 +03 [53984] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 17:00:04.894 +03 [53984] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 17:00:08.667 +03 [53984] ERROR:  relation "u" does not exist at character 23
+2023-12-17 17:00:08.667 +03 [53984] STATEMENT:  EXPLAIN SELECT * FROM "u" LIMIT 10;
+2023-12-17 17:00:08.965 +03 [53984] ERROR:  relation "us" does not exist at character 23
+2023-12-17 17:00:08.965 +03 [53984] STATEMENT:  EXPLAIN SELECT * FROM "us" LIMIT 10;
+2023-12-17 17:00:09.348 +03 [53984] ERROR:  relation "user" does not exist at character 23
+2023-12-17 17:00:09.348 +03 [53984] STATEMENT:  EXPLAIN SELECT * FROM "user" LIMIT 10;
+2023-12-17 17:04:27.077 +03 [54070] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 17:04:27.077 +03 [54070] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 17:04:58.381 +03 [54077] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 17:04:58.381 +03 [54077] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 17:05:00.283 +03 [54079] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 17:05:00.283 +03 [54079] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 17:06:08.762 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 17:06:08.897 +03 [4621] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.122 s, sync=0.006 s, total=0.141 s; sync files=2, longest=0.006 s, average=0.003 s; distance=1 kB, estimate=465 kB; lsn=0/212CCF8, redo lsn=0/212CCC0
+2023-12-17 17:12:42.677 +03 [54244] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 17:12:42.677 +03 [54244] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 17:14:36.056 +03 [54330] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 17:14:36.056 +03 [54330] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-17 17:14:44.794 +03 [54330] ERROR:  relation "i" does not exist at character 23
+2023-12-17 17:14:44.794 +03 [54330] STATEMENT:  EXPLAIN SELECT * FROM "i" LIMIT 10;
+2023-12-17 17:14:45.066 +03 [54330] ERROR:  relation "in" does not exist at character 23
+2023-12-17 17:14:45.066 +03 [54330] STATEMENT:  EXPLAIN SELECT * FROM "in" LIMIT 10;
+2023-12-17 17:14:45.555 +03 [54330] ERROR:  relation "inve" does not exist at character 23
+2023-12-17 17:14:45.555 +03 [54330] STATEMENT:  EXPLAIN SELECT * FROM "inve" LIMIT 10;
+2023-12-17 17:14:45.789 +03 [54330] ERROR:  relation "inves" does not exist at character 23
+2023-12-17 17:14:45.789 +03 [54330] STATEMENT:  EXPLAIN SELECT * FROM "inves" LIMIT 10;
+2023-12-17 17:16:08.751 +03 [4621] LOG:  checkpoint starting: time
+2023-12-17 17:16:09.493 +03 [4621] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.726 s, sync=0.009 s, total=0.742 s; sync files=8, longest=0.006 s, average=0.001 s; distance=2 kB, estimate=419 kB; lsn=0/212D658, redo lsn=0/212D620
+2023-12-17 18:05:32.178 +03 [55176] ERROR:  database ""SafqaDb"" does not exist
+2023-12-17 18:05:32.178 +03 [55176] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 08:19:35.122 +03 [4619] LOG:  received fast shutdown request
+2023-12-18 08:19:35.123 +03 [4619] LOG:  aborting any active transactions
+2023-12-18 08:19:35.134 +03 [65161] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.134 +03 [65166] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.135 +03 [65168] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.135 +03 [65162] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.133 +03 [65167] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.134 +03 [65165] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.134 +03 [65160] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.136 +03 [65170] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.136 +03 [65159] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.136 +03 [65156] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.137 +03 [65164] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.135 +03 [65169] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.136 +03 [65163] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.148 +03 [65158] FATAL:  terminating connection due to administrator command
+2023-12-18 08:19:35.196 +03 [4619] LOG:  background worker "logical replication launcher" (PID 4626) exited with exit code 1
+2023-12-18 08:19:35.197 +03 [4621] LOG:  shutting down
+2023-12-18 08:19:35.207 +03 [4621] LOG:  checkpoint starting: shutdown immediate
+2023-12-18 08:19:35.240 +03 [4621] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.025 s, sync=0.001 s, total=0.043 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=377 kB; lsn=0/212D708, redo lsn=0/212D708
+2023-12-18 08:19:35.257 +03 [4619] LOG:  database system is shut down
+2023-12-18 15:40:41.733 +03 [2459] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2023-12-18 15:40:41.736 +03 [2459] LOG:  listening on IPv6 address "::1", port 5432
+2023-12-18 15:40:41.736 +03 [2459] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-12-18 15:40:41.737 +03 [2459] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2023-12-18 15:40:41.748 +03 [2462] LOG:  database system was shut down at 2023-12-18 08:19:35 +03
+2023-12-18 15:40:41.767 +03 [2459] LOG:  database system is ready to accept connections
+2023-12-18 15:45:41.722 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 15:45:41.741 +03 [2460] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.020 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/212D7F0, redo lsn=0/212D7B8
+2023-12-18 15:50:41.744 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 15:50:42.485 +03 [2460] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.721 s, sync=0.009 s, total=0.742 s; sync files=8, longest=0.006 s, average=0.002 s; distance=2 kB, estimate=2 kB; lsn=0/212E1D8, redo lsn=0/212E1A0
+2023-12-18 15:55:41.487 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 15:55:42.220 +03 [2460] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.719 s, sync=0.002 s, total=0.733 s; sync files=8, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=2 kB; lsn=0/212ECB0, redo lsn=0/212EC78
+2023-12-18 16:00:41.210 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 16:00:41.948 +03 [2460] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.719 s, sync=0.009 s, total=0.739 s; sync files=8, longest=0.007 s, average=0.001 s; distance=2 kB, estimate=2 kB; lsn=0/212F818, redo lsn=0/212F7E0
+2023-12-18 16:55:43.001 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 16:55:43.416 +03 [2460] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.409 s, sync=0.003 s, total=0.416 s; sync files=5, longest=0.002 s, average=0.001 s; distance=9 kB, estimate=9 kB; lsn=0/2131F38, redo lsn=0/2131F00
+2023-12-18 17:00:43.429 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 17:00:43.740 +03 [2460] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.002 s, total=0.311 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=9 kB; lsn=0/2132778, redo lsn=0/2132740
+2023-12-18 17:15:43.774 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 17:15:43.885 +03 [2460] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.002 s, total=0.112 s; sync files=1, longest=0.002 s, average=0.002 s; distance=4 kB, estimate=8 kB; lsn=0/2133958, redo lsn=0/2133920
+2023-12-18 17:40:43.897 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 17:40:47.847 +03 [2460] LOG:  checkpoint complete: wrote 40 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.935 s, sync=0.009 s, total=3.951 s; sync files=39, longest=0.002 s, average=0.001 s; distance=159 kB, estimate=159 kB; lsn=0/215B5B0, redo lsn=0/215B578
+2023-12-18 17:44:08.167 +03 [6270] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 17:44:08.167 +03 [6270] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 17:44:23.249 +03 [6259] ERROR:  syntax error at or near "," at character 61
+2023-12-18 17:44:23.249 +03 [6259] STATEMENT:  INSERT INTO public."Wallet"(
+		money, "InvestorId")
+		VALUES (, 5000, 2);
+2023-12-18 17:44:35.130 +03 [6259] ERROR:  duplicate key value violates unique constraint "IX_Wallet_InvestorId"
+2023-12-18 17:44:35.130 +03 [6259] DETAIL:  Key ("InvestorId")=(2) already exists.
+2023-12-18 17:44:35.130 +03 [6259] STATEMENT:  INSERT INTO public."Wallet"(
+		money, "InvestorId")
+		VALUES (5000, 2);
+2023-12-18 17:45:43.851 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 17:45:44.667 +03 [2460] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.807 s, sync=0.002 s, total=0.816 s; sync files=7, longest=0.002 s, average=0.001 s; distance=8 kB, estimate=144 kB; lsn=0/215D880, redo lsn=0/215D848
+2023-12-18 19:30:43.969 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 19:30:46.318 +03 [2460] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.336 s, sync=0.008 s, total=2.349 s; sync files=15, longest=0.006 s, average=0.001 s; distance=128 kB, estimate=142 kB; lsn=0/217DB20, redo lsn=0/217DAE8
+2023-12-18 19:33:03.352 +03 [9325] ERROR:  index "IX_invesments_OppertunityId" does not exist
+2023-12-18 19:33:03.352 +03 [9325] STATEMENT:  DROP INDEX "IX_invesments_OppertunityId"
+2023-12-18 19:35:43.327 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 19:35:48.925 +03 [2460] LOG:  checkpoint complete: wrote 56 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.579 s, sync=0.012 s, total=5.599 s; sync files=50, longest=0.006 s, average=0.001 s; distance=317 kB, estimate=317 kB; lsn=0/21CD128, redo lsn=0/21CD0F0
+2023-12-18 19:36:28.270 +03 [9456] ERROR:  relation "opportunities" already exists
+2023-12-18 19:36:28.270 +03 [9456] STATEMENT:  CREATE TABLE opportunities (
+	    "Id" integer NOT NULL GENERATED BY DEFAULT AS IDENTITY,
+	    "Name" text NULL,
+	    "TotalInvesments" double precision NOT NULL,
+	    CONSTRAINT "PK_opportunities" PRIMARY KEY ("Id")
+	)
+2023-12-18 19:37:19.471 +03 [5345] ERROR:  cannot drop table opportunities because other objects depend on it
+2023-12-18 19:37:19.471 +03 [5345] DETAIL:  constraint FK_opportunitiesWallets_opportunities_OpportunityId on table "opportunitiesWallets" depends on table opportunities
+2023-12-18 19:37:19.471 +03 [5345] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2023-12-18 19:37:19.471 +03 [5345] STATEMENT:  DROP TABLE IF EXISTS public.opportunities;
+2023-12-18 19:37:26.552 +03 [5345] ERROR:  cannot drop table users because other objects depend on it
+2023-12-18 19:37:26.552 +03 [5345] DETAIL:  constraint FK_InvestorsWallets_users_InvestorId on table "InvestorsWallets" depends on table users
+2023-12-18 19:37:26.552 +03 [5345] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2023-12-18 19:37:26.552 +03 [5345] STATEMENT:  DROP TABLE IF EXISTS public.users;
+2023-12-18 19:40:43.941 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 19:40:54.529 +03 [2460] LOG:  checkpoint complete: wrote 105 buffers (0.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=10.562 s, sync=0.021 s, total=10.588 s; sync files=77, longest=0.006 s, average=0.001 s; distance=749 kB, estimate=749 kB; lsn=0/2288528, redo lsn=0/22884F0
+2023-12-18 19:45:43.572 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 19:45:45.206 +03 [2460] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.610 s, sync=0.017 s, total=1.635 s; sync files=2, longest=0.017 s, average=0.009 s; distance=111 kB, estimate=685 kB; lsn=0/22A4288, redo lsn=0/22A4250
+2023-12-18 19:46:52.190 +03 [9765] ERROR:  column "Aziz" does not exist at character 85
+2023-12-18 19:46:52.190 +03 [9765] STATEMENT:  INSERT INTO public.users(
+		"Fullname", "Email", "Phone", "Discriminator")
+		VALUES ( "Aziz", "aziz@hotmail.com", "054000", "Investor");
+2023-12-18 19:47:02.215 +03 [9765] ERROR:  syntax error at or near ""Fullname"" at character 29
+2023-12-18 19:47:02.215 +03 [9765] STATEMENT:  INSERT INTO public.users(
+		("Fullname", "Email", "Phone", "Discriminator")
+		VALUES ( "Aziz", "aziz@hotmail.com", "054000", "Investor");
+2023-12-18 19:47:15.031 +03 [9765] ERROR:  syntax error at or near ""Fullname"" at character 29
+2023-12-18 19:47:15.031 +03 [9765] STATEMENT:  INSERT INTO public.users(
+		("Fullname", "Email", "Phone", "Discriminator")
+		VALUES ("Aziz", "aziz@hotmail.com", "054000", "Investor");
+2023-12-18 19:47:55.787 +03 [9788] ERROR:  column "Aziz" does not exist at character 85
+2023-12-18 19:47:55.787 +03 [9788] STATEMENT:  INSERT INTO public.users(
+		 "Fullname", "Email", "Phone", "Discriminator")
+		VALUES ("Aziz", "aziz@hotmail.com", "054000", "Investor");
+2023-12-18 19:48:10.087 +03 [9788] ERROR:  column "aziz" does not exist at character 85
+2023-12-18 19:48:10.087 +03 [9788] STATEMENT:  INSERT INTO public.users(
+		 "Fullname", "Email", "Phone", "Discriminator")
+		VALUES (Aziz, "aziz@hotmail.com", "054000", "Investor");
+2023-12-18 19:48:54.929 +03 [9788] ERROR:  column "Aziz" does not exist at character 85
+2023-12-18 19:48:54.929 +03 [9788] STATEMENT:  INSERT INTO public.users(
+		 "Fullname", "Email", "Phone", "Discriminator")
+		VALUES ("Aziz", "azizhotmail", "054000", "Investor");
+2023-12-18 19:49:18.048 +03 [9788] ERROR:  column "cooper" does not exist at character 82
+2023-12-18 19:49:18.048 +03 [9788] STATEMENT:  INSERT INTO public.users("Fullname", "Email", "Phone", "Discriminator")
+		VALUES ("cooper", "azizhotmail", "054000", "Investor");
+2023-12-18 19:49:21.049 +03 [9788] ERROR:  column "cooper" does not exist at character 82
+2023-12-18 19:49:21.049 +03 [9788] STATEMENT:  INSERT INTO public.users("Fullname", "Email", "Phone", "Discriminator")
+		VALUES ("cooper", "azizhotmail", "054000", "Investor");
+2023-12-18 19:49:32.752 +03 [9788] ERROR:  syntax error at or near "cooper" at character 1
+2023-12-18 19:49:32.752 +03 [9788] STATEMENT:  cooper
+2023-12-18 19:49:41.333 +03 [9788] ERROR:  syntax error at or near "cooper" at character 81
+2023-12-18 19:49:41.333 +03 [9788] STATEMENT:  INSERT INTO public.users("Fullname", "Email", "Phone", "Discriminator")
+		VALUES cooper, "azizhotmail", "054000", "Investor";
+2023-12-18 19:50:14.841 +03 [9844] ERROR:  syntax error at or near "," at character 91
+2023-12-18 19:50:14.841 +03 [9844] STATEMENT:  INSERT INTO public.users(
+		"Id", "Fullname", "Email", "Phone", "Discriminator")
+		VALUES (?, ?, ?, ?, ?);
+2023-12-18 19:50:43.215 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 19:50:43.734 +03 [2460] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.505 s, sync=0.007 s, total=0.520 s; sync files=4, longest=0.006 s, average=0.002 s; distance=31 kB, estimate=619 kB; lsn=0/22ABEA0, redo lsn=0/22ABE68
+2023-12-18 19:50:44.829 +03 [9844] ERROR:  column "cooper" does not exist at character 93
+2023-12-18 19:50:44.829 +03 [9844] STATEMENT:  INSERT INTO public.users(
+		"Id", "Fullname", "Email", "Phone", "Discriminator")
+		VALUES (1, cooper, coooper@mail.com, 05400203, Investor);
+2023-12-18 22:20:43.634 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 22:20:43.768 +03 [2460] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.115 s, sync=0.006 s, total=0.141 s; sync files=1, longest=0.006 s, average=0.006 s; distance=7 kB, estimate=558 kB; lsn=0/22ADAE0, redo lsn=0/22ADAA8
+2023-12-18 22:22:53.574 +03 [14198] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 22:22:53.574 +03 [14198] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 22:23:58.369 +03 [14156] ERROR:  insert or update on table "opportunitiesWallets" violates foreign key constraint "FK_opportunitiesWallets_opportunities_OpportunityId"
+2023-12-18 22:23:58.369 +03 [14156] DETAIL:  Key (OpportunityId)=(0) is not present in table "opportunities".
+2023-12-18 22:23:58.369 +03 [14156] STATEMENT:  INSERT INTO "opportunitiesWallets" ("OpportunityId", money)
+	VALUES ($1, $2)
+	RETURNING "Id"
+2023-12-18 22:25:43.768 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 22:25:46.132 +03 [2460] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.343 s, sync=0.009 s, total=2.364 s; sync files=16, longest=0.006 s, average=0.001 s; distance=25 kB, estimate=505 kB; lsn=0/22B4108, redo lsn=0/22B40D0
+2023-12-18 22:25:53.779 +03 [14279] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 22:25:53.779 +03 [14279] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 22:25:55.911 +03 [14279] ERROR:  relation "u" does not exist at character 23
+2023-12-18 22:25:55.911 +03 [14279] STATEMENT:  EXPLAIN SELECT * FROM "u" LIMIT 10;
+2023-12-18 22:25:56.170 +03 [14279] ERROR:  relation "us" does not exist at character 23
+2023-12-18 22:25:56.170 +03 [14279] STATEMENT:  EXPLAIN SELECT * FROM "us" LIMIT 10;
+2023-12-18 22:25:56.495 +03 [14279] ERROR:  relation "user" does not exist at character 23
+2023-12-18 22:25:56.495 +03 [14279] STATEMENT:  EXPLAIN SELECT * FROM "user" LIMIT 10;
+2023-12-18 22:25:57.936 +03 [14279] ERROR:  relation "u" does not exist at character 23
+2023-12-18 22:25:57.936 +03 [14279] STATEMENT:  EXPLAIN SELECT * FROM "u" LIMIT 10;
+2023-12-18 22:25:58.299 +03 [14279] ERROR:  zero-length delimited identifier at or near """" at character 23
+2023-12-18 22:25:58.299 +03 [14279] STATEMENT:  EXPLAIN SELECT * FROM ""
+	""LIMIT 10;
+2023-12-18 22:30:43.062 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 22:30:43.286 +03 [2460] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.210 s, sync=0.006 s, total=0.225 s; sync files=2, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=454 kB; lsn=0/22B4368, redo lsn=0/22B4330
+2023-12-18 22:38:45.131 +03 [14626] ERROR:  syntax error at or near "<" at character 41
+2023-12-18 22:38:45.131 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE <id = 1>;
+2023-12-18 22:38:49.734 +03 [14626] ERROR:  syntax error at or near "<" at character 41
+2023-12-18 22:38:49.734 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE <id == 1>;
+2023-12-18 22:39:22.941 +03 [14626] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:39:22.941 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:39:22.941 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE ID = 1;
+2023-12-18 22:39:27.736 +03 [14626] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:39:27.736 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:39:27.736 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE Id = 1;
+2023-12-18 22:39:34.365 +03 [14626] ERROR:  column opportunities.id does not exist at character 41
+2023-12-18 22:39:34.365 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:39:34.365 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE opportunities.Id = 1;
+2023-12-18 22:39:41.291 +03 [14626] ERROR:  column opportunities.id does not exist at character 41
+2023-12-18 22:39:41.291 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:39:41.291 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE opportunities.id = 1;
+2023-12-18 22:39:53.246 +03 [14626] ERROR:  column opportunities.id does not exist at character 41
+2023-12-18 22:39:53.246 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:39:53.246 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE opportunities.Id = 1;
+2023-12-18 22:40:08.029 +03 [14626] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:40:08.029 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:40:08.029 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE Id = 1;
+2023-12-18 22:41:07.046 +03 [14626] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:41:07.046 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:41:07.046 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE id = 1;
+2023-12-18 22:41:10.972 +03 [14626] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:41:10.972 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:41:10.972 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE id = 1;
+2023-12-18 22:41:33.464 +03 [14626] ERROR:  column opportunities.id does not exist at character 41
+2023-12-18 22:41:33.464 +03 [14626] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:41:33.464 +03 [14626] STATEMENT:  DELETE FROM public.opportunities
+		WHERE opportunities.Id = 1
+2023-12-18 22:47:13.638 +03 [14883] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:47:13.638 +03 [14883] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:47:13.638 +03 [14883] STATEMENT:  DELETE FROM public.opportunities
+		WHERE Id =1;
+2023-12-18 22:47:20.125 +03 [14883] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:47:20.125 +03 [14883] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:47:20.125 +03 [14883] STATEMENT:  DELETE FROM public.opportunities
+		WHERE id =1;
+2023-12-18 22:47:28.504 +03 [14883] ERROR:  column "id" does not exist at character 41
+2023-12-18 22:47:28.504 +03 [14883] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:47:28.504 +03 [14883] STATEMENT:  DELETE FROM public.opportunities
+		WHERE Id = 1;
+2023-12-18 22:47:40.019 +03 [14883] ERROR:  column opportunities.id does not exist at character 41
+2023-12-18 22:47:40.019 +03 [14883] HINT:  Perhaps you meant to reference the column "opportunities.Id".
+2023-12-18 22:47:40.019 +03 [14883] STATEMENT:  DELETE FROM public.opportunities
+		WHERE opportunities.Id = 1;
+2023-12-18 22:48:26.195 +03 [14883] ERROR:  syntax error at or near "Id" at character 1
+2023-12-18 22:48:26.195 +03 [14883] STATEMENT:  Id
+2023-12-18 22:50:23.299 +03 [14963] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 22:50:23.299 +03 [14963] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 22:50:43.286 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 22:50:43.405 +03 [2460] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.006 s, total=0.120 s; sync files=2, longest=0.006 s, average=0.003 s; distance=0 kB, estimate=409 kB; lsn=0/22B4578, redo lsn=0/22B4540
+2023-12-18 22:53:33.467 +03 [15123] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 22:53:33.467 +03 [15123] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 22:55:43.401 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 22:55:44.136 +03 [2460] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.714 s, sync=0.008 s, total=0.736 s; sync files=8, longest=0.006 s, average=0.001 s; distance=1 kB, estimate=368 kB; lsn=0/22B4B08, redo lsn=0/22B4AD0
+2023-12-18 22:55:50.926 +03 [15177] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 22:55:50.926 +03 [15177] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 22:55:52.290 +03 [15177] ERROR:  relation "u" does not exist at character 23
+2023-12-18 22:55:52.290 +03 [15177] STATEMENT:  EXPLAIN SELECT * FROM "u" LIMIT 10;
+2023-12-18 22:55:52.577 +03 [15177] ERROR:  relation "us" does not exist at character 23
+2023-12-18 22:55:52.577 +03 [15177] STATEMENT:  EXPLAIN SELECT * FROM "us" LIMIT 10;
+2023-12-18 22:56:22.241 +03 [15189] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 22:56:22.241 +03 [15189] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 23:00:43.137 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 23:00:43.257 +03 [2460] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.003 s, total=0.121 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=331 kB; lsn=0/22B4D18, redo lsn=0/22B4CE0
+2023-12-18 23:13:13.965 +03 [15645] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 23:13:13.965 +03 [15645] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 23:13:16.149 +03 [15645] ERROR:  relation "i" does not exist at character 23
+2023-12-18 23:13:16.149 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "i" LIMIT 10;
+2023-12-18 23:13:16.464 +03 [15645] ERROR:  relation "in" does not exist at character 23
+2023-12-18 23:13:16.464 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "in" LIMIT 10;
+2023-12-18 23:13:16.894 +03 [15645] ERROR:  relation "inve" does not exist at character 23
+2023-12-18 23:13:16.894 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "inve" LIMIT 10;
+2023-12-18 23:13:17.229 +03 [15645] ERROR:  relation "invesm" does not exist at character 23
+2023-12-18 23:13:17.229 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "invesm" LIMIT 10;
+2023-12-18 23:13:27.368 +03 [15645] ERROR:  relation "u" does not exist at character 23
+2023-12-18 23:13:27.368 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "u" LIMIT 10;
+2023-12-18 23:13:27.640 +03 [15645] ERROR:  relation "us" does not exist at character 23
+2023-12-18 23:13:27.640 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "us" LIMIT 10;
+2023-12-18 23:13:28.186 +03 [15645] ERROR:  relation "user" does not exist at character 23
+2023-12-18 23:13:28.186 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "user" LIMIT 10;
+2023-12-18 23:13:32.445 +03 [15645] ERROR:  relation "use" does not exist at character 23
+2023-12-18 23:13:32.445 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "use" LIMIT 10;
+2023-12-18 23:13:32.860 +03 [15645] ERROR:  relation "u" does not exist at character 23
+2023-12-18 23:13:32.860 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "u" LIMIT 10;
+2023-12-18 23:13:33.185 +03 [15645] ERROR:  zero-length delimited identifier at or near """" at character 23
+2023-12-18 23:13:33.185 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM ""
+	""LIMIT 10;
+2023-12-18 23:13:33.471 +03 [15645] ERROR:  relation "I" does not exist at character 23
+2023-12-18 23:13:33.471 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "I" LIMIT 10;
+2023-12-18 23:13:34.261 +03 [15645] ERROR:  relation "Inver" does not exist at character 23
+2023-12-18 23:13:34.261 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "Inver" LIMIT 10;
+2023-12-18 23:14:06.189 +03 [15645] ERROR:  relation "O" does not exist at character 23
+2023-12-18 23:14:06.189 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "O" LIMIT 10;
+2023-12-18 23:14:06.830 +03 [15645] ERROR:  relation "Opp" does not exist at character 23
+2023-12-18 23:14:06.830 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "Opp" LIMIT 10;
+2023-12-18 23:14:52.247 +03 [15645] ERROR:  relation "'i'" does not exist at character 23
+2023-12-18 23:14:52.247 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "'i'" LIMIT 10;
+2023-12-18 23:14:53.298 +03 [15645] ERROR:  unterminated quoted identifier at or near ""''
+	'' LIMIT 10;" at character 23
+2023-12-18 23:14:53.298 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "''
+	'' LIMIT 10;
+2023-12-18 23:14:53.833 +03 [15645] ERROR:  relation "'" does not exist at character 23
+2023-12-18 23:14:53.833 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "'" LIMIT 10;
+2023-12-18 23:14:54.963 +03 [15645] ERROR:  zero-length delimited identifier at or near """" at character 23
+2023-12-18 23:14:54.963 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM ""
+	""LIMIT 10;
+2023-12-18 23:14:55.372 +03 [15645] ERROR:  relation "I" does not exist at character 23
+2023-12-18 23:14:55.372 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "I" LIMIT 10;
+2023-12-18 23:14:56.104 +03 [15645] ERROR:  relation "Inve" does not exist at character 23
+2023-12-18 23:14:56.104 +03 [15645] STATEMENT:  EXPLAIN SELECT * FROM "Inve" LIMIT 10;
+2023-12-18 23:15:43.320 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 23:15:45.359 +03 [2460] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.018 s, sync=0.007 s, total=2.040 s; sync files=15, longest=0.006 s, average=0.001 s; distance=2 kB, estimate=298 kB; lsn=0/22B5850, redo lsn=0/22B5818
+2023-12-18 23:18:27.548 +03 [15770] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 23:18:27.548 +03 [15770] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 23:18:34.133 +03 [15770] ERROR:  relation "O" does not exist at character 23
+2023-12-18 23:18:34.133 +03 [15770] STATEMENT:  EXPLAIN SELECT * FROM "O" LIMIT 10;
+2023-12-18 23:18:34.688 +03 [15770] ERROR:  relation "Opp" does not exist at character 23
+2023-12-18 23:18:34.688 +03 [15770] STATEMENT:  EXPLAIN SELECT * FROM "Opp" LIMIT 10;
+2023-12-18 23:19:01.472 +03 [15770] ERROR:  relation "I" does not exist at character 23
+2023-12-18 23:19:01.472 +03 [15770] STATEMENT:  EXPLAIN SELECT * FROM "I" LIMIT 10;
+2023-12-18 23:19:01.948 +03 [15770] ERROR:  relation "In" does not exist at character 23
+2023-12-18 23:19:01.948 +03 [15770] STATEMENT:  EXPLAIN SELECT * FROM "In" LIMIT 10;
+2023-12-18 23:19:02.330 +03 [15770] ERROR:  relation "Invw" does not exist at character 23
+2023-12-18 23:19:02.330 +03 [15770] STATEMENT:  EXPLAIN SELECT * FROM "Invw" LIMIT 10;
+2023-12-18 23:19:03.745 +03 [15770] ERROR:  relation "Inv" does not exist at character 23
+2023-12-18 23:19:03.745 +03 [15770] STATEMENT:  EXPLAIN SELECT * FROM "Inv" LIMIT 10;
+2023-12-18 23:19:05.016 +03 [15770] ERROR:  relation "Inves" does not exist at character 23
+2023-12-18 23:19:05.016 +03 [15770] STATEMENT:  EXPLAIN SELECT * FROM "Inves" LIMIT 10;
+2023-12-18 23:20:37.211 +03 [15877] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 23:20:37.211 +03 [15877] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 23:20:45.732 +03 [15877] ERROR:  relation "I" does not exist at character 23
+2023-12-18 23:20:45.732 +03 [15877] STATEMENT:  EXPLAIN SELECT * FROM "I" LIMIT 10;
+2023-12-18 23:20:46.309 +03 [15877] ERROR:  relation "Inv" does not exist at character 23
+2023-12-18 23:20:46.309 +03 [15877] STATEMENT:  EXPLAIN SELECT * FROM "Inv" LIMIT 10;
+2023-12-18 23:20:46.636 +03 [15877] ERROR:  relation "Inve" does not exist at character 23
+2023-12-18 23:20:46.636 +03 [15877] STATEMENT:  EXPLAIN SELECT * FROM "Inve" LIMIT 10;
+2023-12-18 23:20:46.968 +03 [15877] ERROR:  relation "Inves" does not exist at character 23
+2023-12-18 23:20:46.968 +03 [15877] STATEMENT:  EXPLAIN SELECT * FROM "Inves" LIMIT 10;
+2023-12-18 23:25:43.360 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 23:25:43.478 +03 [2460] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.002 s, total=0.119 s; sync files=1, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=269 kB; lsn=0/22B59F0, redo lsn=0/22B59B8
+2023-12-18 23:29:07.314 +03 [16192] ERROR:  database ""SafqaDb"" does not exist
+2023-12-18 23:29:07.314 +03 [16192] STATEMENT:  
+	    SELECT datname
+	    FROM pg_database
+	    WHERE
+	      datistemplate = false
+	      AND has_database_privilege(quote_ident(datname), 'TEMP, CONNECT') = true
+	    ;
+2023-12-18 23:29:08.965 +03 [16192] ERROR:  relation "O" does not exist at character 23
+2023-12-18 23:29:08.965 +03 [16192] STATEMENT:  EXPLAIN SELECT * FROM "O" LIMIT 10;
+2023-12-18 23:29:09.502 +03 [16192] ERROR:  relation "Opp" does not exist at character 23
+2023-12-18 23:29:09.502 +03 [16192] STATEMENT:  EXPLAIN SELECT * FROM "Opp" LIMIT 10;
+2023-12-18 23:30:43.552 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 23:30:44.476 +03 [2460] LOG:  checkpoint complete: wrote 10 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.909 s, sync=0.005 s, total=0.924 s; sync files=10, longest=0.004 s, average=0.001 s; distance=2 kB, estimate=242 kB; lsn=0/22B62F8, redo lsn=0/22B62C0
+2023-12-18 23:35:43.479 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 23:35:44.112 +03 [2460] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.619 s, sync=0.005 s, total=0.633 s; sync files=6, longest=0.004 s, average=0.001 s; distance=29 kB, estimate=221 kB; lsn=0/22BDAB8, redo lsn=0/22BDA80
+2023-12-18 23:45:43.036 +03 [2460] LOG:  checkpoint starting: time
+2023-12-18 23:45:43.362 +03 [2460] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.007 s, total=0.326 s; sync files=4, longest=0.006 s, average=0.002 s; distance=1 kB, estimate=199 kB; lsn=0/22BDFF0, redo lsn=0/22BDFB8

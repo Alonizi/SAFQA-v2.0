@@ -1,0 +1,28 @@
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+WORKDIR /src
+COPY ["Opportunity_Service/Opportunity_Service.csproj", "./Opportunity_Service/"]
+COPY ["Persistence_Layer_Common/Persistence_Layer_Common.csproj", "./Persistence_Layer_Common/"]
+
+RUN dotnet restore "Persistence_Layer_Common/Persistence_Layer_Common.csproj"
+RUN dotnet restore "Opportunity_Service/Opportunity_Service.csproj"
+
+COPY . .
+WORKDIR "/src/Persistence_Layer_Common"
+RUN dotnet build "Persistence_Layer_Common.csproj" -c Release -o /app/build
+
+WORKDIR "/src/Opportunity_Service"
+RUN dotnet build "Opportunity_Service.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Opportunity_Service.dll"]
+
