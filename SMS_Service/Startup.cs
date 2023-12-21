@@ -35,7 +35,7 @@ namespace SMS_Service
                     .Endpoint(e=>e.Name = "queue:New_Invesment_To_SMS_Event");
                 configurator.AddConsumer<NewUserCreatedConsumer>()
                     .Endpoint(e=>e.Name = "queue:New_User_To_SMS_Event");
-                configurator.AddConsumer<NewUserCreatedConsumer>();
+                // configurator.AddConsumer<NewUserCreatedConsumer>();
 
                 configurator.UsingRabbitMq((ctx,cfg)=>{
                     cfg.ConfigureEndpoints(ctx);
