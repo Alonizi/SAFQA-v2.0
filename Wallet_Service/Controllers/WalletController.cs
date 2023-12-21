@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Wallet_Service.DTO;
+using Persistence_Layer_Common.Repository;
 
 namespace Wallet_Service.Controllers
 {
@@ -19,24 +20,28 @@ namespace Wallet_Service.Controllers
     public class WalletController : ControllerBase
     {
         private readonly ILogger<WalletController> _logger;
-        private readonly ApplicationDbContext _appDb ;
         private readonly ISendEndpointProvider _bus ; 
 
-        public WalletController(ILogger<WalletController> logger,ApplicationDbContext appDb , ISendEndpointProvider bus)
+        private readonly IGenericRepository<InvestorWallet> _investorsWalletsRepo;
+
+        
+
+
+        public WalletController(ILogger<WalletController> logger, IGenericRepository<InvestorWallet> investorsWalletsRepo , ISendEndpointProvider bus)
         {
             _logger = logger;
-            _appDb = appDb;
             _bus = bus;
+            _investorsWalletsRepo = investorsWalletsRepo;
         }
 
         [HttpPost]
         [Route("/applepaytopup")]
         public async Task<IActionResult> TopUpWallet([FromBody] TopUpWalletRequest request){
-            var investor =  await _appDb.investors.Where(i=>i.Id == request.investorId).Include(i=>i.Wallet).SingleOrDefaultAsync();
+            var investorWallet = await _investorsWalletsRepo.FindAsync(filter: iw=>iw.InvestorId ==request.investorId, includes: iw=>iw.Investor );
 
-            investor.Wallet.money += request.amount ; 
-            await _appDb.SaveChangesAsync();
-            return Ok($"{request.amount} SAR added to {investor.Fullname} wallet \n Total = {investor.Wallet.money}");
+            investorWallet.money += request.amount ; 
+            await _investorsWalletsRepo.SaveChangesAync();
+            return Ok($"{request.amount} SAR added to {investorWallet.Investor.Fullname} wallet \n Total = {investorWallet.money}");
         }
 
         // [HttpPost]

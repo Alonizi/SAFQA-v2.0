@@ -29,7 +29,6 @@ namespace Transaction_Service.Consumers {
                     OpportunityWalletId = context.Message.OpportunityWalletId,
                     InvestorWalletId = context.Message.InvestorWalletId 
                     });
-            // await _appDb.SaveChangesAsync();
         }
     }
 }

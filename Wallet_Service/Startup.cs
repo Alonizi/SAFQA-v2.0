@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Wallet_Service.Consumers;
+using Persistence_Layer.Extensions;
 
 namespace Wallet_Service
 {
@@ -43,10 +44,8 @@ namespace Wallet_Service
                     cfg.ConfigureEndpoints(ctx);
                     });
             });
-            
-            services.AddDbContext<ApplicationDbContext>(options => 
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-
+            services.AddSafqaPostgres(Configuration);
+            services.AddRepository();
             services.AddControllers();
             services.AddSwaggerGen();
 

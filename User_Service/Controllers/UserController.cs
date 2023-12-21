@@ -21,14 +21,12 @@ namespace User_Service.Controllers
     {
         
         private readonly ILogger<UserController> _logger;
-        // private readonly ApplicationDbContext _appDb ; 
         private readonly IPublishEndpoint _publishEndPoint;
         private readonly IGenericRepository<Investor> _investorsRepo ; 
 
-        public UserController(ILogger<UserController> logger , ApplicationDbContext appDb , IPublishEndpoint publishEndpoint , IGenericRepository<Investor> investorsRepo)
+        public UserController(ILogger<UserController> logger, IPublishEndpoint publishEndpoint , IGenericRepository<Investor> investorsRepo)
         {
             _logger = logger;
-            // _appDb = appDb; 
             _publishEndPoint = publishEndpoint;
             _investorsRepo = investorsRepo;
         }
@@ -36,9 +34,11 @@ namespace User_Service.Controllers
         [HttpGet]
         [Route("{userId}/")]
         public async Task<IActionResult> get(int userId){
+
             _logger.LogInformation("Fetching User Info");
+
             var user = await _investorsRepo.FindAsync(investor =>investor.Id == userId);
-          // var user = await _appDb.investors.FindAsync(userId);
+
             if(user !=null){
             return Ok(
                 new {
@@ -73,11 +73,12 @@ namespace User_Service.Controllers
                  Fullname = userInfo.Fullname,
                 } ;
             
-            try {
+            try 
+            {
             await _investorsRepo.AddAsync(newInvestor);
-            // await _appDb.SaveChangesAsync();
             }
-            catch(Exception ex){
+            catch(Exception ex)
+            {
                 _logger.LogError ( ex.Message);
                 return BadRequest("error adding new Investor");
             }

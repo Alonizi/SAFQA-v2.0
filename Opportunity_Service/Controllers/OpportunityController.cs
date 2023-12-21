@@ -22,7 +22,6 @@ namespace Opportunity_Service.Controllers
     {
 
         private readonly ILogger<OpportunityController> _logger;
-        private readonly ApplicationDbContext _appDb;
         private readonly IPublishEndpoint _publishEndpoint;
         private readonly IRequestClient<CheckUserFunds> _requestClient;
         private readonly IGenericRepository<Opportunity> _opportunitiesRepo;
@@ -37,7 +36,6 @@ namespace Opportunity_Service.Controllers
             )
         {
             _logger = logger;
-            _appDb = appDb;
             _publishEndpoint = publishEndpoint;
             _requestClient = requestClient; 
             _opportunitiesRepo = opportunitiesRepo;
@@ -49,7 +47,6 @@ namespace Opportunity_Service.Controllers
             
             Opportunity opportunity = new Opportunity{Name = request.name};
             await _opportunitiesRepo.AddAsync(opportunity);
-            // await _appDb.SaveChangesAsync();
             
             //Publish event newely created Opportunity 
             await _publishEndpoint.Publish<NewOpportunityCreated>(
@@ -62,18 +59,20 @@ namespace Opportunity_Service.Controllers
 
         [HttpGet]
         public async Task<IEnumerable<object>> Get (){
-            var allOpportunities =  await _appDb.opportunities
-                .Include(i=>i.Investors)
-                .Include(i=>i.Wallet)
-                .ToListAsync();
+            //get all opportunities along with their navigation properties
+            var allOpportunities = await _opportunitiesRepo.FindAllAsync(
+                o=> 1==1 , 
+                o=>o.Investors,
+                o=>o.Wallet
+            );
 
+            //map to response 
             var response = allOpportunities.Select(r=>new {
                 Opportunityname = r.Name ,
                 totalInvesment = r.Wallet.money ,
                 investors = r.Investors.Select(i=>i.Fullname)
                 });
             return response;
-
         }
         
         [HttpPost]
@@ -109,10 +108,10 @@ namespace Opportunity_Service.Controllers
                         OppertunityId = opportunityId  
                     };
                     await _invesmentsRepo.AddAsync(invesment);
-                    // await _appDb.SaveChangesAsync();
                     
                     responseMsg = "New Invesment Created" ;
                 }
+                
                 // publish invesment event
                 await _publishEndpoint.Publish<NewInvesmentAdded>(
                 new NewInvesmentAdded{ 
