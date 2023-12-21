@@ -19,7 +19,7 @@ namespace Persistence_Layer.Extensions{
         }
 
         public static IServiceCollection AddRepository(this IServiceCollection services){
-            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             return services;
         }
 
